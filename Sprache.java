@@ -59,4 +59,8 @@ public class Sprache
     {
         kasten.abfrageStarten();
     }
+    
+    public Kasten gibKasten(){
+        return kasten;
+    }
 }

@@ -132,7 +132,12 @@ public class Trainer
      */
     public int gibAnzahlVokabelnGesamt()
     {
-        return 0;
+        int zaehler = 0;
+        while(sprachen.hasAccess()){
+            Kasten temp = sprachen.getContent().gibKasten();
+            
+        }
+        return zaehler;
     }
     
     /**

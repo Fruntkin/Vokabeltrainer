@@ -45,8 +45,7 @@ public class Kastenfach
      */
     public boolean istLeer()
     {
-        // zu implementieren
-        return false;
+        return vokabeln.isEmpty();
     }
 
     /**
@@ -54,6 +53,6 @@ public class Kastenfach
      */
     public void haengeVokabelAn(Vokabel vokabel)
     {
-        // zu implementieren
+        vokabeln.append(vokabel);
     }
 }
