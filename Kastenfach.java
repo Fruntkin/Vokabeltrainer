@@ -25,8 +25,8 @@ public class Kastenfach
      */
     public Vokabel gibErsteVokabel()
     {
-        // zu implementieren
-        return null;
+        vokabeln.toFirst();
+        return vokabeln.getContent();
     }
 
     /**
