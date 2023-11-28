@@ -133,17 +133,20 @@ public class Trainer
     public int gibAnzahlVokabelnGesamt()
     {
         int zaehler = 0;
+        sprachen.toFirst();
         while(sprachen.hasAccess()){
             Kasten temp = sprachen.getContent().gibKasten();
             for(int i = 0; i < 5; i++){
                 Kastenfach fach = temp.gibKastenfach(i);
                 List<Vokabel> list = fach.gibListe();
+                list.toFirst();
                 while(list.hasAccess())
                 {
                     zaehler++;
                     list.next();
                 }
             }
+            sprachen.next();
         }
         return zaehler;
     }
