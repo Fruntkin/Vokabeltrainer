@@ -38,6 +38,16 @@ public class Kastenfach
     public void loescheVokabel(Vokabel vokabel)
     {
         // zu implementieren
+        vokabeln.toFirst();
+        while (vokabeln.hasAccess())
+        {
+            if (vokabeln.getContent().equals(vokabel))
+            {
+                break;
+            }
+            vokabeln.next();
+        }
+        vokabeln.remove();
     }
 
     /**
@@ -45,6 +55,7 @@ public class Kastenfach
      */
     public boolean istLeer()
     {
+
         return vokabeln.isEmpty();
     }
 
