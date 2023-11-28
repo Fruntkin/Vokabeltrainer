@@ -135,7 +135,12 @@ public class Trainer
         int zaehler = 0;
         while(sprachen.hasAccess()){
             Kasten temp = sprachen.getContent().gibKasten();
-            
+            for(int i = 0; i < 5; i++){
+                Kastenfach fach = temp.gibKastenfach(i);
+                if(!fach.istLeer()){
+                    
+                }
+            }
         }
         return zaehler;
     }

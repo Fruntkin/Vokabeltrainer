@@ -66,4 +66,8 @@ public class Kastenfach
     {
         vokabeln.append(vokabel);
     }
+    public List<Vokabel> gibListe(){
+        
+        return vokabeln;
+    }
 }
