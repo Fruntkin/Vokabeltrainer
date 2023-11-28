@@ -137,12 +137,11 @@ public class Trainer
             Kasten temp = sprachen.getContent().gibKasten();
             for(int i = 0; i < 5; i++){
                 Kastenfach fach = temp.gibKastenfach(i);
-                if(!fach.istLeer()){
-                    List<Vokabel> list = fach.gibListe();
-                    while(list.hasAccess()){
-                        zaehler++;
-                        list.next();
-                    }
+                List<Vokabel> list = fach.gibListe();
+                while(list.hasAccess())
+                {
+                    zaehler++;
+                    list.next();
                 }
             }
         }
